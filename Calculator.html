@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>REHAN</title>
+	<link rel="stylesheet" href="css/calculator.css">
+</head>
+<body>
+	 <!-- NavBar -->
+	 <div class="w3-top w3-margin-bottom">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="#home" class="w3-bar-item w3-button"><b>Cloud</b> Architects</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#projects" class="w3-bar-item w3-button">Calculator</a>
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact Us</a>
+    </div>
+  </div>
+</div>
+	 <!-- Calculator Form -->
+   <form name="calc" >	
+    <table>
+    	<thead>
+    		<tr>
+    			<td colspan="2"><h2 class="heading">Calculator</h2></td>
+    		</tr>
+    	</thead>
+        <tr>
+            <td>
+                <input type="text" name="input" size="5" id="answer">
+                <br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <input type="hidden" name="" id="clik_num" placeholder=""/>
+                <input type="button" class="val_btn" name="one" value="1" onclick="calc.input.value += '1';button_press(1); " id="">
+                <input type="button" name="two" class="val_btn" value="2" id="" onclick="calc.input.value += '2';button_press(2);">
+                <input type="button" name="three" class="val_btn" value="  3  " id="" onclick="calc.input.value += '3';button_press(3);">
+                <input type="button" class="operator" name="plus" value="  +  " onclick="calc.input.value += ' + '">
+                <br>
+                <input type="button" name="four" class="val_btn" value="  4  " id="" onclick="calc.input.value += '4';button_press(4);">
+                <input type="button" name="five" class="val_btn" value="  5  " id="" onclick="calc.input.value += '5';button_press(5);">
+                <input type="button" name="six" value="  6  " class="val_btn" id="" onclick="calc.input.value += '6';button_press(6);">
+                <input type="button" class="operator"  name="minus" value="  -  " onclick="calc.input.value += ' - '">
+                <br>
+                <input type="button" name="seven" class="val_btn" value="  7  " id="" onclick="calc.input.value += '7';button_press(7);">
+                <input type="button" name="eight" class="val_btn" value="  8  " id="" onclick="calc.input.value += '8';button_press(8);">
+                <input type="button" name="nine" class="val_btn" value="  9  " id="" onclick="calc.input.value += '9';button_press(9);">
+                <input type="button" class="operator" name="times" value="  x  " onclick="calc.input.value += ' * '">
+                <br>
+                <input type="button" id="clear" name="clear" value="  c  " onclick="calc.input.value = ''">
+                <input type="button" name="zero" class="val_btn" value="  0  " id="" onclick="calc.input.value += '0';button_press(0);">
+                <input type="button" name="doit" value="  =  " onclick="calc.input.value = eval(calc.input.value)">
+                <input type="button" class="operator" name="div" value="  /  " onclick="calc.input.value += ' / '">
+                <br>
+            </td>
+        </tr>
+    </table>
+</form>
+<div id="live-chat">
+    
+    <header class="clearfix">
+      
+      <a href="#" class="chat-close">x</a>
+
+      <h4>Mehmet Mert</h4>
+
+      <span class="chat-message-counter">3</span>
+
+    </header>
+
+    <div class="chat">
+      
+      <div class="chat-history">
+        
+        <div class="chat-message clearfix">
+          
+          <img src="" alt="" width="32" height="32">
+
+          <div class="chat-message-content clearfix">
+            
+            <span class="chat-time">13:35</span>
+
+            <h5>John Doe</h5>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, explicabo quasi ratione odio dolorum harum.</p>
+
+          </div> <!-- end chat-message-content -->
+
+        </div> <!-- end chat-message -->
+
+        <hr>
+
+        <div class="chat-message clearfix">
+          
+          <img src="" alt="" width="32" height="32">
+
+          <div class="chat-message-content clearfix">
+            
+            <span class="chat-time">13:37</span>
+
+            <h5>Marco Biedermann</h5>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, nulla accusamus magni vel debitis numquam qui tempora rem voluptatem delectus!</p>
+
+          </div> <!-- end chat-message-content -->
+
+        </div> <!-- end chat-message -->
+
+        <hr>
+ <!-- end chat-message -->
+
+
+      </div> <!-- end chat-history -->
+
+      <form action="#" method="post">
+      </form>
+
+    </div> <!-- end chat -->
+
+  </div> <!-- end live-chat -->
+<footer class="w3-center w3-black w3-padding-16 my_footer">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">MSIT2k20</a></p>
+</footer>
+<script  language="JavaScript" src="css/JQuery.js" type="text/javascript" charset="utf-8"></script>
+<script src="css/calculator.js" type="text/javascript" charset="utf-8" async defer></script>
+</body>
+</html>
